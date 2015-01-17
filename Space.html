@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Howler Js for sounds -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/howler/1.1.17/howler.min.js"></script>
+	
+	<!-- Load Twitter Bootstrap for CSS styling -->
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet" type="text/css" />
+	<script src="http://getbootstrap.com/dist/js/bootstrap.js"></script>
+	
+	<title>Space Shooter</title>
+	
+	<style>
+		#canvas
+		{
+			width: 500;
+			height: 600;
+			margin: 0;
+			margin: auto;
+			border: 2px solid #6e6e7b;
+			display: block;
+		}
+		#score
+		{
+			margin-left: 28%;
+			margin-right: 28%;
+		}
+		#health
+		{
+			margin-left: 28%;
+			margin-right: 28%;
+		}
+	</style>
+</head>
+<body>
+    <div class="container">
+        <div class="page-header">
+			<center><h2><span style="color: blue">Space Defense</span><small>&nbsp&nbsp Version 1.5</small></h2></center>
+		</div>
+		<canvas id="canvas" height="580" width="500"></canvas>
+		<div id="health">
+			<span class='label label-success'>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+		</div>
+		<div id="score">
+			<span class='label label-primary'>Score:</span><br>
+			<span class='label label-danger'>Escaped:</span>
+		</div>
+	</div>
+	<script src="space.js"></script>
+</body>
+</html>
